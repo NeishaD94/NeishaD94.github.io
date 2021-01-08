@@ -1,0 +1,147 @@
+<DOCTYPE! html>
+<html>
+<head>
+
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: lightgray;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #000000;
+  text-align: center;
+  height: 6%;
+}
+
+.topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 50px 50px;
+  padding-bottom: 70px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #FF8C00;
+  color: black;
+}
+
+.topnav a.active {
+  color: white;
+}
+
+iframe{
+display: block;
+border-color: hotpink;
+  width: 350px;
+  height: 300px
+
+}
+
+ table{
+            float: right;
+            padding-right: 50px;
+            padding-bottom: 100px;
+            font-size: 10px;
+            width: 50%;
+ }
+ td {
+           border: hidden;
+           text-align: left;
+           padding-top: 40px;
+       }
+#row_one {
+  background-color: hotpink;
+  font-family: "Arial", sans-serif;
+}
+#row_two{
+  background-color: pink;
+  font-family: "Courier", serif;
+}
+#row_three{
+padding-top: 500px;
+background-color: lightpink;
+font-family: "Corsiva", serif;
+
+}
+img{
+  padding-left: 50px;
+  border-radius: 10px ;
+  width:150px;
+  height: 200px;
+  border-color: black;
+}
+button{
+  background-color: #FF8C00;
+  border-radius: 5px;
+  float: right;
+  margin-right: 50px;
+  margin-bottom: 100px;
+  color: white
+
+}
+footer {
+  text-align: center;
+  padding: 5px;
+  background-color: #000000;
+  color: white;
+  position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+}
+
+
+</style>
+</head>
+<body>
+<!-- add a nav bar -->
+
+  <div class="topnav">
+      <a class="active" href="#home">HOME</a>
+      <a href="#news">ABOUT</a>
+      <a href="#contact">BOOK</a>
+      <a href="#about">CONTACT</a>
+  </div>
+<!-- Added a iframe with my first assignment-->
+<div>
+<p align="center"><iframe src="Assignment_1.html"></iframe></p>
+</div>
+<br><br><br>
+<!-- added a photo and rounded the edges-->
+<div class="container">
+  <div>
+    <img src="new_york_city.png">
+  </div>
+<br>
+<div>
+  <!-- added a color coded table-->
+    <table>
+        <tr id="row_one">
+          <td>This is the hotpink paragraph, fornt family is Arial.</td>
+        </tr>
+        <tr id="row_two">
+          <td>This is the pink paragraph, font family is Courier.</td>
+        </tr>
+        <tr id="row_three">
+          <td>This is the lightpink paragraph, font family is Corsiva</td>
+        </tr>
+    </table>
+</div>
+
+<div>
+  <button>This is a Button</button>
+</div>
+</div>
+</body>
+ <footer>
+   <p>Study button, input, form and textarea elements.</p>
+ </footer>
+</html>
