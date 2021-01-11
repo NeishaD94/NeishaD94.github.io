@@ -3,75 +3,125 @@
     width: 100%;
   }
 }
+.ui-layout-north {
 
-* {
-  box-sizing: border-box;
-  background-image: linear-gradient(to bottom right, #AFF8DB,
-    #B5B9FF);
+   top: 0;
+   left: 0;
+   width: 100%;
+   background: #ffffff;
+
+   height: 100px;
 }
 
-.header{
-  border: 10px solid #FF9CEE;
-  border-style: groove;
-  padding:2px;
-  margin: 5%;
+.ui-layout-north .logo {
+   line-height: 50px;
+}
+
+.left_logo {
+   margin: 0 ;
+   width: 150px;
+   top: 0px;
+   display: inline-block;
+   height: 100px;
+   margin: 0 auto;
+}
+
+.right_logo {
+   margin: 0;
+   padding-right: 5px;
+   width: 150px;
+   top: 0px;
+   display: inline-block;
+   height: 100px;
+   float: right;
+   margin: auto;
+}
+
+.container{
+  border: 2px solid black;
+  border-style: solid;
+  padding:15px;
+  display:   inline-flex;
+  background-color: lightpink;
+  color: white;
+}
+h2 {
   text-align: center;
-  color: #FFFFFF;
-  text-shadow: 2px 2px #F6A6FF;
 }
 
-.new {
-width: 100%;
-height: 100%;
-
-
-}
 .column{
   flex: 33.33%;
   padding: 5px;
 }
-.container {
-  border: 5px solid lightpink;
-  border-style: dotted solid double;
-  padding:15px;
-  display:   inline-flex;
+
+.new{
+  width: 100%;
+  height: 100%;
 }
 
-#first {
-  filter: grayscale(50);
-  border-radius: 7%;
+img.left{
+  float: left;
 }
 
-#second{
-filter: opacity(0.8);
-border-radius: 7%;
-}
-
-#third{
-border-radius: 7%;
-}
-
-.justified {
-color: #85E3FF;
-font-family: fantasy;
-opacity:0.5;
-margin-left: auto;
-margin-right: auto;
-text-align: center;
+ img.right {
+   float: right;
  }
 
- .imgButton{
-     text-align: center;
+ table {
+  border: 1px solid black;
+  border-collapse: collapse;
  }
 
- figure{
-   border: 1px #cccccc solid;
-   padding: 4px;
-   margin: auto;
+ th{
+   background-color: #BFFCC6;
+ }
+ .contact{
+   width:5%;
  }
 
-figcaption{
-   background-color: white;
-   font-style:italic;
+ .topnav{
    text-align: center;
+   padding: 15px 25px;
+
+ }
+
+  #copy{
+text-align: center;
+
+  }
+
+  #middle{
+    background-color: lightgray;
+     border: 2px solid blue;
+  }
+
+ #third{
+  width: 200px;
+ }
+  .container2{
+  border-style: solid;
+  display:   inline-flex;
+  border: 1px double solid blue;
+  padding: : 25px 50px 75px;
 }
+  .column{
+    float: left;
+    display: inline-blocks;
+    width: auto;
+  }
+
+  #first{
+    float: right;
+    display: inline-blocks;
+  }
+  #second{
+    float: left;
+    display: inline-block;
+  }
+
+.col{
+  border-style: solid;
+  padding:15px 15px;
+  display:   inline-flex;
+  border: 2px solid black;
+  }
