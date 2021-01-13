@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML CSS Clock</title>
+  <style type="text/css">
+      body {
+        background: linear-gradient(0.25turn, #d6658b, #ebf8e1, #65b2d6);
+
+      }
+
+      .container {
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .clock {
+      width: 400px;
+      height:400px;
+      background: radial-gradient(white, black);
+      display: inline-block;
+      border-radius: 50%;
+      border: 1em solid #d66592;
+      position: relative;
+      background: url("clock-no-arm.png");
+      background-size: cover;
+    }
+
+    .center {
+      position: absolute;
+      width:20px;
+      height:20px;
+      border-radius: 50%;
+      background: #d66592;
+      top:50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+  .minute-arm {
+    height: 33%;
+    width: 4px;
+    position: absolute;
+    background: black;
+    left: 50%;
+    bottom: 50%;
+    transform: translateX(-50%);
+    transform-origin: bottom;
+    animation: rotate 15s linear infinite;
+
+  }
+
+  .hour-arm {
+    position: absolute;
+    width: 4px;
+    height: 30%;
+    background: black;
+    left: 50%;
+    bottom: 50%;
+    transform: translateX(-50%);
+    transform-origin: bottom;
+    animation: hour 15s linear infinite;
+  }
+
+
+  @keyframes rotate {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+  }
+  @keyframes hour {
+    from{transform: rotate(90deg);}
+    to{transform: rotate(115deg);}
+  }
+  footer{
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  </style>
+</head>
+<body>
+
+
+<div class="container">
+  <div class="clock">
+      <div class="hour-arm"></div>
+      <div class="minute-arm"></div>
+      <div class="center"></div>
+
+    </div>
+  </div>
+</body>
+<footer>
+  <h3>Copyright 2021 by Lyneisha Dickenson</h3>
+</footer>
+</html>
