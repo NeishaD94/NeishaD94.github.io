@@ -9,15 +9,20 @@ body {
   text-align: center;
 }
  .dev {
-   width: 500px;
-   height: 100%;
    padding: 15px;
  }
  .backend {
    width: 350px;
    height: 50%;
  }
-
+ #fe {
+   width: 120% ;
+   height: 100% ;
+ }
+#be {
+  width: 55%;
+  height: 100%;
+}
  .modulewindow{
    position: fixed;
    top: 0px;
@@ -94,8 +99,7 @@ body {
 
      .footer {
      text-align: center;
-     font-size: 30px;
-     padding: 2px;
+     font-size: 25px;
      position: fixed;
      left: 0;
      bottom: 0;
