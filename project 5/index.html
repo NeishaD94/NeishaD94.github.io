@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class="">
+      <h1>Collecting Weight and Height for BMI</h1>
+      <h3>Please fill the entires to get populations statistics on Weight, Height and BMI</h3>
+      <form class="" action="{{url_for(thankyou)}}" method="POST">
+        <input type="email" name="email_name" required value="" title=".." placeholder="Enter your email">
+        <br>
+        <input type="number" min="50" max="300" name="height_name" required value="Enter your Height in Meter">
+        <br>
+          <input type="number" min="30" max="200" name="weight_name" required value="Enter your Weight in Kg">
+          <br>
+          <button type="submit" name="button"><a href="thankyou.html">Submit</a></button>
+      </form>
+    </div>
+  </body>
+</html>
