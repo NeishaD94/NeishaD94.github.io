@@ -1,7 +1,266 @@
-body {
-  background-color: rgb(220, 150, 100);
+ul {
+  list-style-type: none;
+  margin: -10px;
+  padding: 0 50px 0 50px;
   text-align: center;
+  overflow: hidden;
+  background-color: #032b43;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+ body {
+    height: 110vh;
+    font-size: 20px;
+    background: linear-gradient(to top right, #136f63, #0d1321);
+    background-repeat: no-repeat;
+    background-size: 130%;
+    color: white;
+}
+ .header{
+   text-align: center;
+ }
+
+ #logo {
+ background-image: url(calendar-time.png);
+ background-repeat: no-repeat;
+ padding: 15px;
+ position: relative;
+ }
+
+.mwindow1{
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: #0d1321;
+    opacity: 0;
+    pointer-events: none;
+    transition:all 400ms ease-in-out;
+}
+.mwindow1:target{
+  opacity: 1;
+  pointer-events: all;
+
+}
+.closewindow{
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+}
+.msgblock{
+  position: relative;
+  width:400px;
+  background-color: white;
+  margin: auto;
+  margin-top: 30px;
+}
+.xbutton{
+  float: right;
+  padding-left:10px;
+  padding-right:10px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+}
+.textbackground{
+  padding-right: 7px;
+  background-color: #032b43;
+  padding-left: 7px;
+  padding-bottom: 10px;
+}
+.innerbg{
+  text-align: center;
+  padding-top:10px;
+  padding-bottom: 10px;
+
+}
+
+.checker{
+  text-align: left;
+  margin-left: 55px;
+}
+
+.editb{
+  text-decoration: none;
+  height: 5%;
+  background-color: black;
+  color: white;
+  padding: 5px 5px 5px 5px;
+
+}
+
+.suborder a:hover{
+  background-color: grey;
+
+}
+
+.foot{
+  height: 100px;
+  width: 110%;
+  margin-top: 10%;
+  left: 0;
+  bottom:0;
+  margin:auto;
+  padding-top: 5%;
+  position: fixed;
+}
+
+.footer {
+  height: 20%;
+  margin-top: 80px;
+  position: fixed;
+}
+
+.footer-basic {
+  padding:40px 0;
+  background-color:#ffffff;
+  color:#4b4c4d;
+}
+
+.footer-basic a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:10px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+* {box-sizing: border-box;}
+ul {list-style-type: none;}
+
+.titlecal {
+margin-left: 50px;
+}
+
+.month {
+  padding: 70px 25px;
+  width: 300px;
+  background: #1abc9c;
+  text-align: center;
+
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.month ul li {
+  color: white;
   font-size: 20px;
-  margin-left: auto;
-  padding: 0,0,0,0;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  width: 300px;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+  width: 300px;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+  .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li, .days li {width: 12.5%;}
+  .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li, .days li {width: 12.2%;}
 }
